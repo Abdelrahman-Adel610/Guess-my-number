@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Press Start 2P", system-ui;
 }
 
 :root {
@@ -10,10 +11,67 @@
 }
 
 body {
-    font-family: "Rubik", sans-serif;
+    height: 100vh;
+    background-color: var(--prim-clr);
+    color: var(--sec-clr);
 }
 
 a {
     display: inline-block;
     text-decoration: none;
+}
+
+button {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-image: linear-gradient(#0000001f, #0000001f);
+}
+
+/* heeader section */
+.top {
+    margin: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-header {
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: 2.25rem;
+}
+
+.ques-mark {
+    display: inline-block;
+    text-align: center;
+    font-size: 4rem;
+    background-color: var(--sec-clr);
+    color: var(--prim-clr);
+    padding: 1.5rem 3rem;
+}
+
+.main-header .par {
+    margin-top: 2rem;
+    position: relative;
+    text-align: center;
+
+}
+
+.main-header p::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: .625rem;
+    z-index: -1;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: #fff;
 }

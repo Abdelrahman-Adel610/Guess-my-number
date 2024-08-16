@@ -14,6 +14,7 @@ body {
     height: 100vh;
     background-color: var(--prim-clr);
     color: var(--sec-clr);
+    overflow: hidden;
 }
 
 a {
@@ -52,8 +53,8 @@ button:hover {
     display: inline-block;
     text-align: center;
     font-size: 4rem;
-    background-color: var(--sec-clr);
     color: var(--prim-clr);
+    background-color: var(--sec-clr);
     padding: 1.5rem 3rem;
 }
 
@@ -74,4 +75,45 @@ button:hover {
     top: 50%;
     transform: translate(0, -50%);
     background-color: #fff;
+}
+
+main {
+    margin-top: 3.875rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.enter-num {
+
+    text-align: center;
+}
+
+input {
+    background-color: transparent;
+    border-color: var(--sec-clr);
+    height: 6.25rem;
+    width: 15.625rem;
+    color: var(--sec-clr);
+    border: .1875rem var(--sec-clr) solid;
+    font-size: 2.75rem;
+    display: block;
+    padding: 3rem;
+}
+
+.enter-num button {
+    margin-top: 2.25rem;
+}
+
+.results {
+    font-size: 1.25rem;
+    /* width: 60%; */
+}
+
+.message {
+    margin-bottom: 6rem;
+}
+
+.sc {
+    margin-bottom: 1rem;
 }

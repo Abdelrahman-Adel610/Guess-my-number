@@ -90,6 +90,7 @@ main {
 }
 
 input {
+    text-align: center;
     background-color: transparent;
     border-color: var(--sec-clr);
     height: 6.25rem;

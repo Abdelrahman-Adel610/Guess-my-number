@@ -33,16 +33,15 @@ function updateInertface(trial) {
       highScore.textContent = maxScore;
     } else if (trial < 0) {
       message.textContent = "📉 Too low";
-      body.style.backgroundColor = "#e11d48";
       trials--;
     } else {
       message.textContent = "📈 Too high";
-      body.style.backgroundColor = "#e11d48";
       trials--;
     }
     score.textContent = trials;
   }
   if (!trials) {
+    body.style.backgroundColor = "#e11d48";
     message.textContent = "💥 You lost the game";
   }
 }
@@ -56,6 +55,7 @@ function reset() {
   message.textContent = "Start guessing...";
   highScore.textContent = maxScore;
   score.textContent = trials;
+  displayNumberBox.style.padding = "1.5rem 3rem";
 }
 /*****************************************/
 checkBtn.addEventListener("click", function () {

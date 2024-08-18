@@ -1,0 +1,30 @@
+@media only screen and (max-width:40.625em) {
+    html {
+        font-size: 80%;
+    }
+
+    input {
+        /* height: 6.25rem;
+        width: 9.375rem; */
+    }
+}
+
+@media only screen and (max-width:30em) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .top {
+        margin: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .message {
+        margin-bottom: 2rem;
+    }
+}
